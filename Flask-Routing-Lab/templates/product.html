@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="static/css/style.css">
     <meta charset="UTF-8">
     <title>Product</title>
 </head>
@@ -9,10 +10,13 @@
     <img src="static/miaslogo1.png" width="400" height="400">
     <h1>Here is some of my products !</h1>
     <h2>The Prices :</h2>
-    <li>Necklace: 50$</li>
-    <li>braclet: 35$</li>
-    <li>braclets set: 50$</li>
-    <button><a href='{{ url_for("home") }}'>Home Page</a></button>
+    <h3>Necklace: 50$ | braclet: 35$ | braclets set: 50$</h3>
+    <button>Add to CART !</button>
+    <ul>
+        <li><a href='{{ url_for("home") }}'>HOME</a></li>
+        <li><a href='{{ url_for("product") }}'>MY JEWERLLY</a></li>
+        <li><a href='{{ url_for("cart") }}'>CART</a></li>
+    </ul>
     <img src="static/products.jpeg" width="1100" height="1700">
     </center>
 </body>

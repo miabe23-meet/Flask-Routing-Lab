@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="static/css/style.css">
     <meta charset="UTF-8">
     <title>Mia's Jewerlly shop !</title>
 </head>
@@ -10,7 +11,11 @@
     <h1>Welcome to my website !</h1>
     <h2>Here you'll be able to find all the jewerlly I make and order it ! </h2>
     <h2>Looking for a special present for someone? a new jewerlly for you? YOURE IN THE RIGHT PLACE !</h2>
-    <button><a href='{{ url_for("product") }}'>more products</a></button>
+    <ul>
+        <li><a href='{{ url_for("home") }}'>HOME</a></li>
+        <li><a href='{{ url_for("product") }}'>MY JEWERLLY</a></li>
+         <li><a href='{{ url_for("cart") }}'>CART</a></li>
+    </ul>
 
     <img src="static/picHome.jpeg" width="1100" height="300">
 
